@@ -1,0 +1,35 @@
+# Siri 3 / iOS 27 Siri AI + Apple Intelligence / ChatGPT 扩展
+# 含二代核心域名，另加 iOS 27 Siri AI 云端接入点
+# Shadowrocket RULE-SET，策略走 PROXY（美国 / 新加坡）
+DOMAIN,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN,apple-relay.mask.apple-dns.net
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN-KEYWORD,apple-relay
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN,mask-api.fe2.apple-dns.net
+DOMAIN,mask-t.apple-dns.net
+DOMAIN-SUFFIX,mask.apple-dns.net
+DOMAIN,gateway.icloud.com
+DOMAIN-KEYWORD,apple-intelligence
+DOMAIN,seed.siri.apple.com
+DOMAIN,seed-sequoia.siri.apple.com
+DOMAIN,seed-swallow.siri.apple.com
+DOMAIN,api-siri-prod.apple.com
+DOMAIN-SUFFIX,siri.apple.com
+DOMAIN-SUFFIX,siri.com
+DOMAIN,probe.icloud.com
+DOMAIN,metrics.icloud.com
+DOMAIN,apple-carry-relay.cloudflare.com
+DOMAIN,apple-relay.akamaized.net
