@@ -1,0 +1,14 @@
+# Telegram 推送（APNs）
+# 让 Apple 推送服务走代理，解决锁屏收不到 Telegram 通知的问题
+# Shadowrocket RULE-SET，策略走 PROXY
+# 同时需要在小火箭中开启：设置 → 隧道 → 包括所有网络 + 包括 APNs
+DOMAIN-SUFFIX,push.apple.com
+IP-CIDR,17.249.0.0/16,no-resolve
+IP-CIDR,17.252.0.0/16,no-resolve
+IP-CIDR,17.57.144.0/22,no-resolve
+IP-CIDR,17.188.128.0/18,no-resolve
+IP-CIDR,17.188.20.0/23,no-resolve
+IP-CIDR6,2620:149:a44::/48,no-resolve
+IP-CIDR6,2403:300:a42::/48,no-resolve
+IP-CIDR6,2403:300:a51::/48,no-resolve
+IP-CIDR6,2a01:b740:a42::/48,no-resolve
