@@ -1,0 +1,41 @@
+name: Daily update Johnshall + Siri rules
+
+on:
+  schedule:
+    - cron: "52 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Patch upstream rules
+        run: python3 scripts/patch_johnshall.py
+
+      - name: Publish as single Nightly commit on main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add siri2.list siri3.list scripts/patch_johnshall.py README.md \
+            sr_top500_whitelist_ad_siri2.conf \
+            sr_top500_whitelist_ad_siri3.conf
+          git rm -f --ignore-unmatch \
+            AppleIntelligence-Shadowrocket.list \
+            sr_top500_whitelist_ad_appleintelligence.conf || true
+          ROOT=$(git rev-list --max-parents=0 HEAD)
+          git reset --soft "$ROOT"
+          git commit --amend -m "Nightly build"
+          git push --force origin HEAD:main
