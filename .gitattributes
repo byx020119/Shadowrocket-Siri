@@ -1,0 +1,3 @@
+# Keep repository attributes and Shadowrocket configs portable.
+.gitattributes text eol=lf
+*.conf text eol=lf

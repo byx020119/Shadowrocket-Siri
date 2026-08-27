@@ -1,0 +1,39 @@
+# Meta Muse 个人 AI Agent
+# 不含 Siri 规则，单独使用
+# Shadowrocket RULE-SET，策略走 PROXY（美国 / 新加坡住宅优先）
+# 地区限制看出口 IP，机房 IP 容易被等待名单
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,museai.com
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,atmeta.com
+DOMAIN-SUFFIX,metaaivm.com
+DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,ecto1usercontent.com
+DOMAIN,hatch.ecto1.ai
+DOMAIN,node.hatch.one
+DOMAIN,meta.privacy-gateway.cloudflare.com
+DOMAIN,meta.hpke-keys.privacy-gateway.cloudflare.com
+DOMAIN,meta-ohttp-relay-prod.fastly-edge.com
+DOMAIN,meta-ohttp-config-prod.fastly-edge.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbpigeon.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN,auth.meta.com
+DOMAIN,ep7.facebook.com
+
+# === Meta AI / Llama 通用（来自 VPSDance/ai-proxy-rules meta-ai.list） ===
+DOMAIN,ai.developer.meta.com
+DOMAIN,ai.meta.com
+DOMAIN,aidemos.meta.com
+DOMAIN,developer.meta.com
+DOMAIN,llama.developer.meta.com
+DOMAIN-SUFFIX,llama.com
+DOMAIN-SUFFIX,llamameta.net
