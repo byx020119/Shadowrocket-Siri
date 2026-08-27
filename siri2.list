@@ -1,0 +1,23 @@
+# Siri 2 / Apple Intelligence / ChatGPT 扩展 / Private Cloud Compute
+# Shadowrocket RULE-SET，策略走 PROXY（美国 / 新加坡）
+DOMAIN,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN,apple-relay.mask.apple-dns.net
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN-KEYWORD,apple-relay
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN,mask-t.apple-dns.net
+DOMAIN-SUFFIX,mask.apple-dns.net
+DOMAIN,gateway.icloud.com
+DOMAIN-KEYWORD,apple-intelligence
